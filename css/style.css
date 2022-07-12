@@ -1,0 +1,536 @@
+body {
+  min-width: 1180px;
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: #283136;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 15px 40px;
+  border-radius: 3px;
+  line-height: 18px;
+  font-weight: 500;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #db575a;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #c84448;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+.btn:active {
+  background-color: #ba3a3d;
+  color: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0px 2px 1px #c13135;
+  outline: none;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.btn.btn-green {
+  background-color: #00ca74;
+}
+
+.btn.btn-green:hover,
+.btn.btn-green:focus {
+  background-color: #00bc6c;
+}
+
+.btn.btn-green:active {
+  background-color: #00aa62;
+  box-shadow: inset 0px 2px 1px #009958;
+}
+
+.btn.btn-yellow {
+  background-color: #efc84a;
+}
+
+.btn.btn-yellow:hover,
+.btn.btn-yellow:focus {
+  background-color: #eab534;
+}
+
+.btn.btn-yellow:active {
+  background-color: #e5a722;
+  box-shadow: inset 0px 2px 1px #ce961f;
+}
+
+.btn.btn-gray {
+  background-color: #ededed;
+  color: black;
+}
+
+.btn.btn-gray:hover,
+.btn.btn-gray:focus {
+  background-color: #dedede;
+}
+
+.btn.btn-gray:active {
+  background-color: #d4d4d4;
+  box-shadow: inset 0px 2px 1px #bfbfbf;
+}
+
+.wrapper {
+  width: 1160px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+/* Site Header and Navigation */
+.site-header {
+  padding-top: 50px;
+  padding-bottom: 10px;
+  background-color: #eeeeee;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.site-header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-header a {
+  /* в референсе тут просто черный цвет, перепроверить в макете */
+  color: #283136;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.site-header a:hover,
+.site-header a:focus {
+  color: #db575a;
+  transition: color 0.3s;
+}
+
+.site-header a:active {
+  color: inherit;
+  opacity: 0.3;
+  transition: color 0.3s, opacity 0.3s;
+}
+
+.header-logo {
+  /* У меня название класса другое */
+  /* И правильнее было бы его переделать */
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header-logo img:hover,
+.header-logo img:focus {
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.header-logo img:active {
+  opacity: 0.3;
+  transition: opacity 0.3s;
+}
+
+.site-navigation {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.site-navigation-item {
+  margin: 5px 23px 0;
+}
+
+.site-navigation-item a {
+  outline: none;
+}
+
+.site-navigation-item.active {
+  border-bottom: 2px solid #db575a;
+}
+
+.cart {
+  position: relative;
+  padding-left: 40px;
+  margin: 5px 0 0 40px;
+  outline: none;
+  max-width: 100px;
+}
+
+.cart::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 15px;
+  height: 15px;
+  background-image: url('../img/cart-icon.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.cart:active {
+  opacity: 1;
+}
+
+.cart:active span {
+  opacity: 0.3;
+  transition: opacity 0.3s;
+}
+
+.cart:active::before {
+  opacity: 1;
+}
+
+/* Тут должен быть футер */
+
+/* Index page - Slider */
+.advantages {
+  /* В референсе другое название класса */
+  background-color: #eeeeee;
+  margin-bottom: 80px;
+}
+
+.advantages-wrapper {
+  position: relative;
+}
+
+.advantage-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.advantage-list-item {
+  box-sizing: border-box;
+  min-height: 400px;
+  padding: 60px 0 80px;
+  display: none;
+  background-size: contain;
+  background-position: top right 30px;
+  background-repeat: no-repeat;
+}
+
+.advantage-list-item.slide-1 {
+  background-image: url('../img/advantage-slide-1.png');
+}
+
+.advantage-list-item.slide-2 {
+  background-image: url('../img/advantage-slide-2.png');
+}
+
+.advantage-list-item.slide-3 {
+  background-image: url('../img/advantage-slide-3.png');
+}
+
+.advantage-list-item .slide-content {
+  width: 50%;
+}
+
+.advantage-list-item .tagline {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  margin: 0 0 25px;
+}
+
+.advantage-list .comment {
+  width: 80%;
+  margin: 0 0 38px;
+}
+
+.advantage-list-item .btn {
+  padding: 16px 55px;
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: space-between;
+  width: 90px;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom: 95px;
+  left: 50%;
+  margin-left: -45px;
+  list-style: none;
+}
+
+.slider-controls-item {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 0;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+#slide-1:checked ~ .advantage-list .advantage-list-item.slide-1 {
+  display: block;
+}
+
+#slide-2:checked ~ .advantage-list .advantage-list-item.slide-2 {
+  display: block;
+}
+
+#slide-3:checked ~ .advantage-list .advantage-list-item.slide-3 {
+  display: block;
+}
+
+
+#slide-1:checked ~ .slider-controls .slider-controls-item--1::after,
+#slide-2:checked ~ .slider-controls .slider-controls-item--2::after,
+#slide-3:checked ~ .slider-controls .slider-controls-item--3::after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid #c2c2c2;
+  top: 5px;
+  left: 5px
+}
+
+/* end of Index page - Slider */
+
+.service-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  border-bottom: 2px solid #eeeeee;
+}
+
+.service-item {
+  width: 300px;
+  padding: 0 0 80px;
+  margin-right: 100px;
+}
+
+.service-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.service-item h3 {
+  margin: 19px 0 15px;
+  /* Переделать такие маржины! */
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.service-item p {
+  margin: 0 0 33px;
+}
+
+.description {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0 75px;
+}
+
+.description-services {
+  width: 660px;
+  margin-right: auto;
+}
+
+.description-services ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.description-credo {
+  width: 360px;
+}
+
+.description-credo > p {
+  text-align: center;
+}
+
+.description .about-us {
+  margin: 35px 0;
+  color: black;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.description .about-us-comment {
+  margin: 0 0 39px;
+}
+
+.about-us-services p {
+  margin: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.about-us-services li {
+  position: relative;
+  padding-left: 35px;
+  margin-top: 23px;
+}
+
+.about-us-services li::before {
+  display: block;
+  content: '';
+  width: 25px;
+  height: 2px;
+  position: absolute;
+  left: 0px;
+  top: 11px;
+  background-color: #db575a;
+}
+
+.description-credo > p {
+  margin: 34px 0 38px;
+  line-height: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.indicators td {
+  width: 30%;
+  margin-right: 5%;
+}
+
+.indicators td:last-child {
+  margin-right: 0;
+}
+
+.indicators-values td {
+  padding-bottom: 15px;
+}
+
+.indicators-values b {
+  color: black;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: bold;
+}
+
+.indicators-values sup {
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.indicators-names {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.client-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0 0 80px;
+  list-style: none;
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
+}
+
+.client-list-item {
+  width: 280px;
+  min-height: 180px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+.client-list-item::after {
+  display: block;
+  content: '';
+  height: 50px;
+  border-right: 2px solid #eeeeee;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -25px;
+}
+
+.client-list-item:nth-child(4n)::after,
+.client-list-item:last-child::after {
+  display: none;
+}
+
+.client-list-item.borodinski,
+.client-list-item.pink {
+  width: 300px;  
+}
+
+.client-list-item.htmlacademy a {
+  margin: 15px 15px 0 0;
+}
+
+.client-list-item.mishka a {
+  margin: 15px 0 0 15px;
+}
+
+.client-list-item a {
+  display: inline-block;
+  opacity: 0.2;
+  outline: none;
+}
+
+.client-list-item a:hover,
+.client-list-item a:focus {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.client-list-item a:active {
+  opacity: 0.1;
+  transition: opacity 0.3s;
+}
+
+/* Catalog page */
