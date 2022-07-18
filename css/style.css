@@ -1099,3 +1099,75 @@ input[type="radio"].visually-hidden {
 .sorting-order-link.active path {
   fill: rgba(0, 0, 0, 1);
 }
+
+.template-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0 -20px;
+  list-style: none;
+}
+
+.template-list-item {
+  position: relative;
+  width: 360px;
+  min-height: 616px;
+  margin: 0 20px 32px;
+}
+
+.template-list-item:hover,
+.template-list-item:focus {
+  box-shadow: 0px 6px 15px 0px rgba(4, 6, 6, 0.25);
+  transition: box-shadow 0.3s;
+}
+
+.template-list-item svg,
+.template-list-item img {
+  display: block;
+}
+
+.template-list-item:hover .template-card,
+.template-list-item:focus .template-card {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.template-list-item svg {
+  opacity: 0.12;
+}
+
+.template-list-item:hover svg,
+.template-list-item:focus svg {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.template-card {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 40px 50px;
+  opacity: 0;
+  background-color: #eeeeee;
+  text-align: center;
+}
+
+.template-card a {
+  color: black;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.template-card p {
+  margin: 15px 0 25px;
+  color: #666666;
+  line-height: 18px;
+}
+
+.template-card .btn {
+  padding-left: 60px;
+  padding-right: 60px;
+}
