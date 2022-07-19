@@ -134,8 +134,7 @@ input[type="radio"].visually-hidden {
 }
 
 .site-header a {
-  /* в референсе тут просто черный цвет, перепроверить в макете */
-  color: #283136;
+  color: black;
   line-height: 30px;
   font-weight: 500;
 }
@@ -153,8 +152,6 @@ input[type="radio"].visually-hidden {
 }
 
 .header-logo {
-  /* У меня название класса другое */
-  /* И правильнее было бы его переделать */
   display: inline-block;
   vertical-align: middle;
 }
@@ -290,6 +287,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
 }
 
+/* Contact us */
 .contacts {
   background-color: #e9e5dc;
   background-image: url(../img/map-with-marker.jpg);
@@ -486,7 +484,6 @@ input[type="radio"].visually-hidden {
 
 /* Index page - Slider */
 .advantages {
-  /* В референсе другое название класса */
   background-color: #eeeeee;
   margin-bottom: 80px;
 }
@@ -592,6 +589,7 @@ input[type="radio"].visually-hidden {
   top: 5px;
   left: 5px
 }
+
 /* end of Index page - Slider */
 
 .service-list {
@@ -1170,4 +1168,38 @@ input[type="radio"].visually-hidden {
 .template-card .btn {
   padding-left: 60px;
   padding-right: 60px;
+}
+
+/* Catalog page - Pagination */
+.pagination {
+  padding: 30px 0 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pagination .page {
+  margin-right: 10px;
+}
+
+.page .btn {
+  box-sizing: border-box;
+  padding: 0;
+  min-width: 50px;
+  min-height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.page .btn-gray.active {
+  background-color: #ffffff;
+  border: 2px solid #eeeeee;
+  line-height: 46px;
+  box-shadow: none;
+}
+
+.page .btn-next {
+  padding-left: 80px;
+  padding-right: 80px;
 }

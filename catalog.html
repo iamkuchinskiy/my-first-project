@@ -20,7 +20,7 @@
         <ul class="site-navigation">
           <li class="site-navigation-item"><a href="#">Студия</a></li>
           <li class="site-navigation-item"><a href="#">Клиенты</a></li>
-          <li class="site-navigation-item"><a href="catalog.html">Магазин</a></li>
+          <li class="site-navigation-item active"><a href="catalog.html">Магазин</a></li>
           <li class="site-navigation-item"><a href="#">Контакты</a></li>
         </ul>
         <a href="#" class="cart">
@@ -37,7 +37,6 @@
       <div class="wrapper main-content-wrapper">
         <section class="filter">
           <h3 class="visually-hidden">Фильтр</h3>
-          <!-- Какой еще фильтр? -->
           <form action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="filter-category price">
               <legend>Стоимость:</legend>
@@ -56,7 +55,6 @@
               </div>
             </fieldset>
             <fieldset class="filter-category grid">
-              <!-- Сетка??? -->
               <legend>Сетка:</legend>
               <label class="grid-radio-control">
                 <input class="visually-hidden" type="radio" name="grid" value="adaptive" checked>
@@ -149,18 +147,52 @@
                   <button type="button" class="btn">9900 руб.</button>
                 </div>
               </li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-
+              <li class="template-list-item" tabindex="0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
+                <img src="img/img-barbershop.jpg" width="360" height="576" alt="Шаблон Barbershop">
+                <div class="template-card">
+                  <a href="#">Barbershop</a>
+                  <p>Сайт салоны красоты.<br>Для мужчин, да.</p>
+                  <button type="button" class="btn">9900 руб.</button>
+                </div>
+              </li>
+              <li class="template-list-item" tabindex="0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
+                <img src="img/img-mishka.jpg" width="360" height="576" alt="Шаблон Mishka">
+                <div class="template-card">
+                  <a href="#">Mishka</a>
+                  <p>Интернет-магазин<br>вязаных игрушек</p>
+                  <button type="button" class="btn">9900 руб.</button>
+                </div>
+              </li>
+              <li class="template-list-item" tabindex="0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
+                <img src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон A Plus">
+                <div class="template-card">
+                  <a href="#">A Plus</a>
+                  <p>Лендинг курсов повышения<br>квалификации</p>
+                  <button type="button" class="btn">9900 руб.</button>
+                </div>
+              </li>
+              <li class="template-list-item" tabindex="0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
+                <img src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон Кваст">
+                <div class="template-card">
+                  <a href="#">Кваст</a>
+                  <p>Промо-сайт производителя<br>крафтового кваса</p>
+                  <button type="button" class="btn">9900 руб.</button>
+                </div>
+              </li>
             </ul>
-
-
+            <ul class="pagination">
+              <li class="page"><a href="#" class="btn btn-gray active">1</a></li>
+              <li class="page"><a href="#" class="btn btn-gray">2</a></li>
+              <li class="page"><a href="#" class="btn btn-gray">3</a></li>
+              <li class="page"><a href="#" class="btn btn-gray btn-next">Следующая</a></li>
+            </ul>
           </section>
         </div>
       </div>
-
       <section class="contacts">
         <h2 class="visually-hidden">Контактная информация</h2>
         <div class="wrapper contacts-wrapper">
@@ -169,14 +201,11 @@
             <p class="address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
             <p class="phone">тел. +7 (812) 275-75-75</p>
             <a href="#" role="button" class="btn btn-write-to-us">Напишите нам</a>
-            <!-- В референсе тут зачем-то ссылка на страницу. Если ничего не ломается, то оставить # -->
           </div>
         </div>
-        <iframe id="yandex-map-widget" class="contacts-map" src="https://yandex.ru/map-widget/v1/-/CCUNjIxGtC"></iframe>
+        <iframe id="yandex-map-widget" class="contacts-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Acb4ee33943ff23b2f4706c61223bf0613f5124a660e3490530cf14d816049dd6&amp;source=constructor"></iframe>
       </section>
     </main>
-
-
     <footer>
       <div class="wrapper footer-wrapper">
         <ul class="social-networks">
@@ -205,5 +234,29 @@
         </div>
       </div>
     </footer>
+    <div id="contact-dialog" class="modal-dialog">
+      <h3>Напишите нам</h3>
+      <button type="button" class="btn-close">
+        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/></svg>
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <form action="https://echo.htmlacademy.ru" method="post" class="contact-form">
+        <div class="contact-form-input">
+          <label for="contact-form-name">Ваше имя:</label>
+          <input id="contact-form-name" name="name" type="text" placeholder="Имя Фамилия">
+        </div>
+        <div class="contact-form-input">
+          <label for="contact-form-email">Ваш e-mail:</label>
+          <input id="contact-form-email" name="email" type="email" placeholder="email@example.com">
+        </div>
+        <div class="contact-form-input textarea">
+          <label for="contact-form-message">Текст письма:</label>
+          <textarea id="contact-form-message" name="message" placeholder="В свободной форме"></textarea>
+        </div>
+        <button type="submit" class="btn">Отправить</button>
+      </form>
+    </div>
+    <script src="js/script.js"></script>
+    <!-- Подключить минифицированную версию  -->
   </body>
 </html>
